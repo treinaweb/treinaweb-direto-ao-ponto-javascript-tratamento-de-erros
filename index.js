@@ -5,33 +5,31 @@ class MeuErro extends Error {
     }
 }
 
-function handleErro(erro) {
-    if (erro instanceof MeuErro) {
-        console.log("tratando MeuErro");
-    }
+async function asyncFunction() {
+    return await new Promise((resolve, reject) => {
+        setTimeout(() => {
+            if (Math.random() > 0.5) {
+                resolve("Sucesso");
 
-    if (erro instanceof RangeError) {
-        console.log("tratando o RangeError");
-    }
-    console.log("Nome: ", erro.name);
-    console.log("Message: ", erro.message);
-    console.log("Cause: ", erro.cause);
+            } else {
+
+                reject(new MeuErro("Erro desconhecido"));
+            }
+
+
+        }, 1000);
+    });
 }
 
-function fetchErro() {
-    if (Math.random() > 0.5) {
-        throw new MeuErro("erro desconhecido", {
-            cause: "causa do erro"
-        });
-    } else {
-        new Array(1000000000000000);
+async function runAsync() {
+    try {
+        console.log("carregando...");
+        const result = await asyncFunction();
+        console.log('executou: ', result);
+    } catch (erro) {
+        console.log(erro.name);
     }
+
 }
 
-try {
-    fetchErro();
-} catch (erro) {
-    handleErro(erro);
-}
-
-console.log('Final da execução do programa');
+runAsync();
