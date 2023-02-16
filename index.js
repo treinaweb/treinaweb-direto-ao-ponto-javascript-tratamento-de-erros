@@ -1,10 +1,17 @@
-console.log('Primeiro console');
 
+var loading = false;
 
-console.log('Segundo console');
+try {
+    console.log('tentando executar...');
+    loading = true;
+    // throw 'erro desconhecido';
 
-// const meuArray = new Array(1000000000000000);
+    console.log('final da execução');
+} catch (erro) {
+    console.log('executou com erro');
+} finally {
+    loading = false;
+    console.log('finally');
+}
 
-throw "erro desconhecido";
-
-console.log('Final da execução do programa');
+console.log('final do código', loading);
