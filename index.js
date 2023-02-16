@@ -8,7 +8,7 @@ class MeuErro extends Error {
 async function asyncFunction() {
     return await new Promise((resolve, reject) => {
         setTimeout(() => {
-            if (Math.random() > 0.5) {
+            if (true) {
                 resolve("Sucesso");
 
             } else {
@@ -21,15 +21,36 @@ async function asyncFunction() {
     });
 }
 
-async function runAsync() {
-    try {
-        console.log("carregando...");
-        const result = await asyncFunction();
-        console.log('executou: ', result);
-    } catch (erro) {
+asyncFunction().then((result) => {
+    throw "novo erro desconhecido";
+    new Array(100000000000);
+    console.log(result);
+}).catch((erro) => {
+    if (erro instanceof MeuErro) {
         console.log(erro.name);
     }
 
-}
+    if (erro instanceof RangeError) {
+        console.log(erro.name);
+    }
+    if (!(erro instanceof Error)) {
 
-runAsync();
+        console.log(erro);
+    }
+
+});
+
+console.log('final da execução do código');
+
+// async function runAsync() {
+//     try {
+//         console.log("carregando...");
+//         const result = await asyncFunction();
+//         console.log('executou: ', result);
+//     } catch (erro) {
+//         console.log(erro.name);
+//     }
+
+// }
+
+// runAsync();
