@@ -1,0 +1,9 @@
+Aula | Video | Commit | Link
+------ | ------ | ------ | ------
+Aula 01 | Vídeo 01 - Lançando um erro | 01:01 - Lançando um erro | [Download](https://github.com/treinaweb/treinaweb-direto-ao-ponto-javascript-tratamento-de-erros/archive/74ed357babab5dd29ac4cc28337b6a45cf247d51.zip)
+Aula 01 | Vídeo 02 - Estrutura try-catch-finally | 01:02 - Estrutura try-catch-finally | [Download](https://github.com/treinaweb/treinaweb-direto-ao-ponto-javascript-tratamento-de-erros/archive/6b4d56b7e6e29845b80703aa7eb627ec3c5624d6.zip)
+Aula 01 | Vídeo 03 - Propriedades do objeto Erro | 01:03 - Propriedades do objeto Erro | [Download](https://github.com/treinaweb/treinaweb-direto-ao-ponto-javascript-tratamento-de-erros/archive/f90ddb82f70fa35b5d0d545b453b87aa32d7ef53.zip)
+Aula 01 | Vídeo 04 - Tratando erros específicos | 01:04 - Tratando erros específicos | [Download](https://github.com/treinaweb/treinaweb-direto-ao-ponto-javascript-tratamento-de-erros/archive/46c8e68bb818a8f1817c9f58fbaea1e1c2b71d23.zip)
+Aula 01 | Vídeo 05 - Tratando erros em Promises utilizando try-catch | 01:05 - Tratando erros em Promises utilizando try-catch | [Download](https://github.com/treinaweb/treinaweb-direto-ao-ponto-javascript-tratamento-de-erros/archive/edeb90fa9660c88a76fbda54ef522f338fb8ec9a.zip)
+Aula 01 | Vídeo 06 - Tratando erros em Promises utilizando métodos then() e catch() | 01:06 - Tratando erros em Promises utilizando métodos then() e catch() | [Download](https://github.com/treinaweb/treinaweb-direto-ao-ponto-javascript-tratamento-de-erros/archive/3cbace82fa10cac3421c19493c0fe08e8c306ae8.zip)
+Aula 01 | Vídeo 07 - Entendendo a Call Stack | 01:07 - Entendendo a Call Stack | [Download](https://github.com/treinaweb/treinaweb-direto-ao-ponto-javascript-tratamento-de-erros/archive/3b06f5d687b3b72c1dbf6194eb925998f5427e2f.zip)
